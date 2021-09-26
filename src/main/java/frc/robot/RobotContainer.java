@@ -37,7 +37,8 @@ public class RobotContainer {
     configureButtonBindings();
      driveSubsystem.setDefaultCommand(new RunCommand(
        ()-> driveSubsystem.tankDrive(Constants.driveSpeed*loserNathan.getRawAxis(Constants.leftJoystick), Constants.driveSpeed*loserNathan.getRawAxis(Constants.rightJoystick)), driveSubsystem));
-  }
+  }// it looks like you did that here, so theoritcally, you should be able to delete the drive command
+  // try deleteing the drivecommand at works and updating to the robot at school, lmk if it works
 
   /**
    * Use this method to define your button->command mappings. Buttons can be created by

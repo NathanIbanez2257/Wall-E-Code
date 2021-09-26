@@ -28,6 +28,17 @@ public class driveSubsystem extends SubsystemBase
     this.leftSide = new SpeedControllerGroup(leftBack, leftFront);
     this.drive = new DifferentialDrive(leftSide, rightSide);
 
+    // damn you copied a lot of my code. the "this" thing is kinda complicated and i forgot why i did it. I saw some
+    // other team do it and i think it made some warning go away?
+    // i forgot what it was but you should prob learn why the other teams did this in their code.
+    // I think since you declare those variables inside this contrusctor the 'this' thing allows you to grab
+    /* whatever you set it equal to somewhere else in your code. So for example its like if you made a variable inside your constructor.
+    you shouldn't be able to grab that variable somewhere else outside your constructor, but if you do the "this" thing
+    it tells ur compiler or sum to look at that variable/ object if its not declared somewhere else. Remember I was in season 
+    when i learned most of coding so i was low on sleep, prob dead, and just looking for the best solutions for my code 
+    so this might not be the best way to do it? it certainly is more confusing, but i think it made it faster or something
+    to update the drive with the joystick values cause of the scheduler.
+    */
 
 
   }
